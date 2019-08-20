@@ -41,6 +41,8 @@ app.post("/",async (req,res) => {
     });
 
     await browser.close();
+
+    res.send("Started server");
 })
 
 app.listen(PORT,() => {
